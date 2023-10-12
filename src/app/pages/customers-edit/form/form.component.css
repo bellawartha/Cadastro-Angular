@@ -1,0 +1,14 @@
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;   
+}
+
+form {
+    width: 70%;
+}
+.gender-select {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+} 

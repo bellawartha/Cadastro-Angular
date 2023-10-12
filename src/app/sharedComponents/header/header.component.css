@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    background: rgb(50, 22, 22);
+    background: linear-gradient(90deg, rgba(50, 22, 22, 1) 0%, rgba(88, 16, 16, 1) 35%, rgba(230, 64, 64, 1) 100%);
+}
+header h1 {
+    color: white;
+    margin: 1rem;
+}
+header div {
+    width: 25%;
+    margin: 1rem;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+a:hover {
+    color: rgba(88, 16, 16, 1);
+}

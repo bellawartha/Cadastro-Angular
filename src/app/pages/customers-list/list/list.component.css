@@ -1,0 +1,31 @@
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    
+}
+
+div table {
+    width: 90%;
+    border: 2px solid gainsboro;
+}
+tr th, tr td {
+    text-align: center;
+}
+
+.listActions{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    & button{
+        border: none;
+        padding: 0.5rem;
+        background-color: rgba(240, 248, 255, 0);
+        &:hover{
+            background-color: rgba(88, 16, 16, 0.404);
+            color: white;
+            border-radius: 1rem;
+        }
+    }
+}
