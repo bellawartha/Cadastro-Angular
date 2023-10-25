@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Customer } from 'src/app/model/customer';
+import { CustomerService } from 'src/app/services/customer.service';
 
 @Component({
   selector: 'app-customers-list',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./customers-list.component.css']
 })
 export class CustomersListComponent {
+
+  constructor () {
+  }
 
 }

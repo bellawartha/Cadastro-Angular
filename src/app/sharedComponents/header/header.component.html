@@ -13,10 +13,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" [routerLink]="['/customersList']">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link" [routerLink]="['/customersEdit']">Customers</a>
+          <a class="nav-link" [routerLink]="['/customersList']" [routerLinkActive]="['active']">List of customers</a>
+          <a class="nav-link" [routerLink]="['/customersEdit']" [routerLinkActive]="['active']"> Edit customers</a>
         </div>
       </div>
     </div>
