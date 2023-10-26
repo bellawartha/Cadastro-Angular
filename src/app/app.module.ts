@@ -10,6 +10,7 @@ import { ListComponent } from './pages/customers-list/list/list.component';
 import { AddClientComponent } from './pages/customers-list/add-client/add-client.component';
 import { HeaderComponent } from './sharedComponents/header/header.component';
 import { FooterComponent } from './sharedComponents/footer/footer.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './sharedComponents/footer/footer.component';
     ListComponent,
     AddClientComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

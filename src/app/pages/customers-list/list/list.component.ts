@@ -1,18 +1,19 @@
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Customer } from 'src/app/model/customer';
 import { CustomerService } from 'src/app/services/customer.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent {
+export class ListComponent implements OnInit {
   
   customers:Customer [] = [];
   customerIdSelectedToDelete:number = -1;
 
-  constructor (private customerService: CustomerService) {
+  constructor (private customerService: CustomerService, private router: Router) {
 
   }
 
@@ -20,9 +21,13 @@ export class ListComponent {
     this.customers = this.customerService.getList();
   }
   
+  goToCustomerEdit(id:number) {
+    this.router.navigate(['customersEdit', id]);
+  }
 
   delete (id:number){
-      this.customerService.delete (id);   
+      this.customerService.delete (id);  
+      this.ngOnInit(); 
   }
   
 }
