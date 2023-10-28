@@ -16,7 +16,7 @@ export class FormComponent implements OnInit{
   constructor (private route: ActivatedRoute, private customerService : CustomerService){
     this.customerForm = new FormGroup({
       name: new FormControl('',[Validators.required, Validators.minLength(6)]),
-      dateOfBirth: new FormControl('',[Validators.required]),
+      birthdate: new FormControl('',[Validators.required]),
       email: new FormControl('',[Validators.required, Validators.email])
     })
 
@@ -29,7 +29,7 @@ export class FormComponent implements OnInit{
 
         this.customerForm = new FormGroup({
           name: new FormControl(currentCustomer?.name,[Validators.required]),
-          dateOfBirth: new FormControl(currentCustomer?.birthdate,[Validators.required]),
+          birthdate: new FormControl(currentCustomer?.birthdate,[Validators.required]),
           email: new FormControl(currentCustomer?.email,[Validators.required, Validators.email])
         })
     }

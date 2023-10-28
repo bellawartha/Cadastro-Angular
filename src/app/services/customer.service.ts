@@ -45,10 +45,11 @@ export class CustomerService {
   };
 
   add(customer: Customer) {
-    let maxId = Number(this.getMaxId());
+    let previousID = this.getMaxId();
+    console.log (previousID)
 
-    if (maxId)
-      customer.id = maxId + 1;
+    if (previousID)
+      customer.id = previousID + 1;
     else
       customer.id = 1;
 
@@ -64,8 +65,8 @@ export class CustomerService {
   };
 
   getMaxId() {
-    return this.customers.reduce((maxId, currentId) => {
-      return currentId > maxId ? currentId : maxId
-    })
+    return this.customers.reduce((maxId, current) => {
+      return current.id > maxId ? current.id : maxId
+    }, 0)
   }
 }
