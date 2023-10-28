@@ -6,7 +6,6 @@ import { Customer } from '../model/customer';
 })
 export class CustomerService {
   customers: Customer[] = [];
-  private nextId: number = 1;
 
   constructor() {
 
@@ -31,21 +30,42 @@ export class CustomerService {
     return this.customers;
   };
 
+  getById(id: number) {
+    return this.customers.find(customer => customer.id === id);
+  };
+
+  update(customer:Customer) {
+    let searchCustomer = this.getById(customer.id);
+
+    if( searchCustomer){
+      searchCustomer.name = customer.name;
+      searchCustomer.email = customer.email;
+      searchCustomer.birthdate = customer.birthdate;
+    }
+  };
+
   add(customer: Customer) {
-    customer.id = this.nextId++;
+    let maxId = Number(this.getMaxId());
+
+    if (maxId)
+      customer.id = maxId + 1;
+    else
+      customer.id = 1;
+
+    console.log (customer)
     this.customers.push(customer);
-  };
-
-  update() {
-
-  };
+  }
 
   delete(id: number) {
-    const i = this.customers.findIndex( customer =>customer.id === id );
-    if (i> -1) {
-      this.customers.splice(i,1);
+    const i = this.customers.findIndex(customer => customer.id === id);
+    if (i > -1) {
+      this.customers.splice(i, 1);
     };
   };
 
-
+  getMaxId() {
+    return this.customers.reduce((maxId, currentId) => {
+      return currentId > maxId ? currentId : maxId
+    })
+  }
 }

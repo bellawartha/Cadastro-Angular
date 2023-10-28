@@ -11,6 +11,7 @@ import { AddClientComponent } from './pages/customers-list/add-client/add-client
 import { HeaderComponent } from './sharedComponents/header/header.component';
 import { FooterComponent } from './sharedComponents/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoginComponent } from './pages/login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
