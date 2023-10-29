@@ -1,0 +1,32 @@
+main {
+    height: 100vh;
+    background: rgb(50, 22, 22);
+    background: linear-gradient(90deg, rgba(50, 22, 22, 1) 0%, rgba(88, 16, 16, 1) 35%, rgba(230, 64, 64, 1) 100%);
+}
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+h1{
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.container h2 {
+    margin-bottom: 4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

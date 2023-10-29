@@ -2,6 +2,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 10vh;
     background: rgb(33,17,17);
     background: linear-gradient(270deg, rgba(33,17,17,1) 0%, rgba(40,5,5,1) 35%, rgba(161,4,4,1) 100%);
 }

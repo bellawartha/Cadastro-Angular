@@ -11,15 +11,15 @@ export class CustomerService {
 
     let customer: Customer = {
       id: 1,
-      name: 'José',
-      email: "jose@email.com",
-      birthdate: new Date("2011-11-11")
+      name: 'Josh',
+      email: "josh@email.com",
+      birthdate: new Date("1996-11-11")
     }
     let customer2: Customer = {
       id: 2,
-      name: 'João',
-      email: "joao@email.com",
-      birthdate: new Date("2012-12-12")
+      name: 'Will',
+      email: "will@email.com",
+      birthdate: new Date("1990-12-12")
     }
 
     this.customers.push(customer)
@@ -53,7 +53,6 @@ export class CustomerService {
     else
       customer.id = 1;
 
-    console.log (customer)
     this.customers.push(customer);
   }
 
