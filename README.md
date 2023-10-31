@@ -11,15 +11,25 @@ Angular CLI (version 8 or higher)
 ## Installation
 Follow the steps below to install and run the project locally:
 
-Clone this repository to your development environment: `git clone https://github.com/your-user/project-name.git `
+Clone this repository to your development environment: 
 
-Navigate to the project directory: `cd project-name`
+`git clone https://github.com/your-user/project-name.git `
 
-Install the project dependencies:  `npm install`
+Navigate to the project directory:
 
-Start the development server:  `ng serve`
+`cd project-name`
 
-Open your browser and access the following URL: `http://localhost:4200`
+Install the project dependencies: 
+
+`npm install`
+
+Start the development server: 
+
+`ng serve`
+
+Open your browser and access the following URL: 
+
+`http://localhost:4200`
 
 Login credentials: 
 
