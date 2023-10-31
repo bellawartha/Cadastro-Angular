@@ -1,27 +1,43 @@
-# CadastroClientes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+##Project CRUD with Angular and Bootstrap
+This project is an example of a CRUD (Create, Read, Update, Delete) application developed using the Angular framework and the Bootstrap styling framework. It consists of three main pages: a login page, a customer listing page, and a page for adding/editing customers.
 
-## Development server
+##Prerequisites
+Make sure you have the following tools installed on your system:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Node.js (version 12 or higher)
+Angular CLI (version 8 or higher)
 
-## Code scaffolding
+##Installation
+Follow the steps below to install and run the project locally:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clone this repository to your development environment: git clone https://github.com/your-user/project-name.git
+Navigate to the project directory: cd project-name
+Install the project dependencies: npm install
+Start the development server: ng serve
+Open your browser and access the following URL: http://localhost:4200
 
-## Build
+##Features
+The project includes the following features:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+##Login Page:
+Allows users to log in using their credentials.
 
-## Running unit tests
+##Customer Listing Page:
+Displays a list of registered customers.
+Enables customer deletion.
+Enables customer edition.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+##Customer Add/Edit Page:
+Allows users to add a new customer by filling out a form.
+Allows users to edit the details of an existing customer.
 
-## Running end-to-end tests
+##Contributing
+If you would like to contribute to this project, feel free to open an issue or send a pull request. We would be happy to receive your contribution!
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+##License
+This project is licensed under the MIT License.
 
-## Further help
+##Contact
+If you have any questions or suggestions regarding this project, please contact us at isabella.wartha@gmail.com
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
